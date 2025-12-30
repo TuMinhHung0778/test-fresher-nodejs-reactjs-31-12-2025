@@ -9,18 +9,10 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER,
       },
-      name: {
-        type: Sequelize.STRING,
-      },
-      description: {
-        type: Sequelize.TEXT,
-      },
-      price: {
-        type: Sequelize.FLOAT,
-      },
-      image: {
-        type: Sequelize.STRING,
-      },
+      name: { type: Sequelize.STRING },
+      description: { type: Sequelize.TEXT },
+      price: { type: Sequelize.FLOAT },
+      image: { type: Sequelize.STRING },
       createdAt: {
         allowNull: false,
         type: "TIMESTAMP",
