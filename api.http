@@ -1,5 +1,14 @@
 GET http://localhost:3000/products
 
+### lọc theo category
+GET http://localhost:3000/products?categoryId=1
+
+### lọc theo giá
+GET http://localhost:3000/products?minPrice=10&maxPrice=100
+
+### lọc theo tên
+GET http://localhost:3000/products?name=Pro
+
 ###
 POST http://localhost:3000/products
 Content-Type: application/json
@@ -8,19 +17,19 @@ Content-Type: application/json
   "name": "Tivi here",
   "description": "updated tive description by from japan",
   "price": 29.99,
-  "image": "tivi_image"
+  "image": "tivinewimage"
 }
 
 ###
-PUT http://localhost:3000/products/10
+PUT http://localhost:3000/products/5
 Content-Type: application/json
 
 {
-  "name": "Updated Product",
-  "description": "This is an updated product.",
+  "name": "Man Hinh 4k",
+  "description": "Chat luong cao cap",
   "price": 39.99,
   "image": "updated_product_image"
 }
 
 ###
-DELETE http://localhost:3000/products/13
+DELETE http://localhost:3000/products/5
