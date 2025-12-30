@@ -1,0 +1,26 @@
+GET http://localhost:3000/products
+
+###
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+  "name": "Tivi here",
+  "description": "updated tive description by from japan",
+  "price": 29.99,
+  "image": "tivi_image"
+}
+
+###
+PUT http://localhost:3000/products/10
+Content-Type: application/json
+
+{
+  "name": "Updated Product",
+  "description": "This is an updated product.",
+  "price": 39.99,
+  "image": "updated_product_image"
+}
+
+###
+DELETE http://localhost:3000/products/13
