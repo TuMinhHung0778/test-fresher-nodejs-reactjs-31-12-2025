@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const authRoutes = require("./routes/auth.routes");
 require("dotenv").config();
 console.log("Loaded env PORT =", process.env.PORT);
 
@@ -12,6 +13,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use("/products", productRoutes);
+app.use("/auth", authRoutes);
 
 const PORT = process.env.PORT || 8888;
 app.listen(PORT, () => {
