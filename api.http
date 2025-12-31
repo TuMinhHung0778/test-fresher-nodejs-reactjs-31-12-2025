@@ -1,35 +1,47 @@
-GET http://localhost:3000/products
+### get all users
+GET http://localhost:3000/users
 
-### lọc theo category
-GET http://localhost:3000/products?categoryId=1
-
-### lọc theo giá
-GET http://localhost:3000/products?minPrice=10&maxPrice=100
-
-### lọc theo tên
-GET http://localhost:3000/products?name=Pro
+### tìm kiếm theo tên
+GET http://localhost:3000/products?name=n
 
 ###
-POST http://localhost:3000/products
+POST http://localhost:3000/users
 Content-Type: application/json
 
 {
   "name": "Tivi here",
-  "description": "updated tive description by from japan",
-  "price": 29.99,
-  "image": "tivinewimage"
+  "dateofbirh": "2020-01-01",
+  "gender": "Nam",
+  "email": "hung@gmail.com",
+  "phone": 123456,
+  "test": "Thi Cau Long tai Sai Gon"
 }
 
 ###
-PUT http://localhost:3000/products/5
+PUT http://localhost:3000/users/7
 Content-Type: application/json
 
 {
-  "name": "Man Hinh 4k",
-  "description": "Chat luong cao cap",
-  "price": 39.99,
-  "image": "updated_product_image"
+  "name": "Minh Hung",
+  "dateofbirh": "2020-01-01",
+  "gender": "Nu",
+  "email": "hung@gmail.com",
+  "phone": 123456,
+  "test": "Thi boi"
 }
 
 ###
-DELETE http://localhost:3000/products/5
+DELETE http://localhost:3000/users/7
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,21 +1,11 @@
-import ProductPage from "./pages/ProductPage";
-import { ToastContainer } from "react-toastify";
+import RegisterForm from "./components/RegisterForm";
 
 function App() {
   return (
     <>
-      <ProductPage />
-      <ToastContainer />
+      <RegisterForm />
     </>
   );
 }
 
 export default App;
-
-// 👉 Nếu đề đổi:
-
-// User → UserPage
-
-// Order → OrderPage
-
-// 👉 Chỉ đổi 1 dòng
